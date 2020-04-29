@@ -1,4 +1,5 @@
 require "nokogiri"
+require "pry"
 
 describe "#create_project_hash" do
   html = File.read('fixtures/kickstarter.html')
