@@ -1,9 +1,6 @@
-require "nokogiri"
-require "pry"
 
 describe "#create_project_hash" do
-  html = File.read('fixtures/kickstarter.html')
-  kickstarter = Nokogiri::HTML(html)
+
 
   it "can be called on with no errors" do
     expect {create_project_hash}.to_not raise_error
